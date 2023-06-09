@@ -28,6 +28,15 @@ header {
     display: flex;
     padding: 50px;
     Flex: 1 1 1000px;
+    flex-shrink: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    overflow: hidden;
+    flex-shrink: 0;
+    max-width: 300px;
 
 }
 
@@ -79,7 +88,6 @@ li {
 img {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .info img {
@@ -104,7 +112,8 @@ img {
     color: #1F2937;
     display: flex;
     justify-content: flex-start;
-    padding: 100px
+    padding: 70px;
+    flex-direction:column
 }
 
 .name {
