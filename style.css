@@ -1,0 +1,15 @@
+body {
+   font-family: 'roboto', 'Courier New', Courier, monospace;
+}
+
+a:link {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1F2937;
+}
+
