@@ -26,38 +26,29 @@ header {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
-    padding: 50px;
+    padding: 100px;
     Flex: 1 1 1000px;
     flex-shrink: 0;
     min-width: 0;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .hero img {
     overflow: hidden;
     flex-shrink: 0;
-    max-width: 300px;
+    max-width: 350px;
 
 }
 
-.button_start {
+.hero .button_start {
     flex: 0 0 80px;
     height: 30px;
-    justify-self: self-start;
-    align-self: self-end;
     background-color: #3882F6;
     border-radius: 5px;
     color: #ffffff;
     font-weight: 600px;
-}
-
-.button_end {
-    background-color: #3882F6;
-    border-radius: 5px;
-    color: #ffffff;
-    font-weight: 600px;
-    flex: 0 0 80px;
-    height: 30px
+    border: none;
 }
 
 .psub {
@@ -67,22 +58,24 @@ header {
 
 .info {
     display: flex;
-    justify-self: flex-end;
+    justify-content: center;
 
 }
 
 .infomain {
     display: flex;
     font-size: 32px;
-    font-weight: 700px;
+    font-weight: 900;
     color: #1F2937;
-    justify-self: flex-start;
+    align-content: center;
+    padding: 50px 0px 15px 0px;
+    justify-content: center;
 }
 
 li {
     list-style: none;
     font-size: 12px;
-    padding: 15px;
+    padding: 25px;
 }
 
 img {
@@ -90,36 +83,77 @@ img {
     justify-content: flex-end;
 }
 
+
 .info img {
     border-radius: 10px;
     border: 5px solid #3882F6;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: flex-start;
+    width: 150px;
+    height: 150px;
 }
 
 .text {
-    display: flex;
-    align-items: center;
     flex: 0 0 250px;
+    width: 150px;
 }
 
 .quote {
     background-color: #E5E7EB;
     font-size: 36px;
-    font-weight: lighter;
+    font-style: italic;
     color: #1F2937;
     display: flex;
     justify-content: flex-start;
     padding: 70px;
-    flex-direction:column
+    flex-direction: column;
+}
+
+.quote .name {
+    font-weight: 700;
+    font-size: 28px;
+    padding-top: 32px;
+    font-style: normal;
 }
 
 .name {
     display: flex;
     justify-self: flex-end;
     align-self: flex-end;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 25px;
+    color: white;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.action .bold {
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+.action .minorbold {
+    font-weight: 100;
+    font-size: 12px;
+    width: 500px;
+}
+
+.button_end {
+    background-color: #3882F6;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    border-color: white;
+    align-self: center;
+    border-style: ridge;
 }
 
 .footer {
